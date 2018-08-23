@@ -119,3 +119,34 @@ test-example 使用需要 test模块
 
 每个应用都用到 Coffee-script
 ![avatar](https://github.com/yangjingjing1234/node-self-cli/blob/master/222.png)
+
+
+* 我们假设项目是 my-project, 需要用到一个独立的 my-utils 模块
+直接用相对路径安装
+```
+$ cd path/to/my-project
+$ npm install path/to/my-utils
+```
+优点：简单明了
+缺点： 调试过程中往往需要微调，此时需要切换到 my-utils 目录修改，然后反复重新 install，很麻烦
+
+npm link
+
+```
+$ cd path/to/my-project
+$ npm link path/to/my-utils
+```
+如果这两种的目录不在一起，那还有一种方法：
+
+```
+$ # 先去到模块目录，把它 link 到全局
+$ cd path/to/my-utils
+$ npm link
+$
+$ # 再去项目目录通过包名来 link
+$ cd path/to/my-project
+$ npm link my-utils
+```
+
+
+
