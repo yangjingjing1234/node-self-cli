@@ -91,6 +91,9 @@ gen
 
 
 ## npm link 使用场景
+我理解的就是一个当前模块要想建立全局关联的时候使用
+在多模块开的时候，联调比较麻烦，改动一个模块就需要重新安装，使用npm link 之后 每个修改嵌套模块之间都是相互关联的
+多模块开发联调的时候使用非常方便
 test-example 使用需要 test模块
 ![avatar](https://github.com/yangjingjing1234/node-self-cli/blob/master/11111.png)
 
