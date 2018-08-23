@@ -7,6 +7,10 @@
 ## 参考文档
 http://javascript.ruanyifeng.com/nodejs/packagejson.html
 
+######  CLI 跟GUI
+* 命令解释程序也可以翻译为命令行用户界面（command-line interface），与图形用户界面（graphical user interface）并列作为人机交互界面的两种实现方式
+
+
 > Node.js分2种模块
 > 
 > 普通模块，供代码调用
@@ -49,6 +53,22 @@ package.json 文件
   "license": "ISC"
 }
 ```
+
+```
+{
+    "name": "yjjtest",
+    "version": "0.0.1",
+    "description": "前端写作开发流程的脚手架",
+    "main": "index.js",
+    "bin": "bin/init", // 安装之后执行 yjjtest 即为执行命令
+    // 或者以下写法
+    "bin":{
+        "yjjself":"bin/init",// 给入口命令指定别名 ，安装之后执行  yjjself 即可
+    }
+}
+    
+```
+
 * 创建入口文件gen
 如果是windwo 应该这样填写：#! E:\nodejs\node
 
