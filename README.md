@@ -92,7 +92,7 @@ gen
 
 ## npm link 使用场景
 test-example 使用需要 test模块
-![avatar](http://baidu.com/pic/doge.png)
+![avatar](https://github.com/yangjingjing1234/node-self-cli/blob/master/11111.png)
 
 每个应用都用到 Coffee-script
-![avatar](http://baidu.com/pic/doge.png)
+![avatar](https://github.com/yangjingjing1234/node-self-cli/blob/master/222.png)
